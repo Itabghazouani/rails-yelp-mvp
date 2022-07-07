@@ -1,0 +1,13 @@
+<h2>Time to add a new restaurant</h2>
+
+<%= simple_form_for @restaurant do |t| %>
+  <%= t.input :name %>
+
+  <%= t.input :address %>
+
+  <%= t.input :phone_number %>
+
+  <%= t.input :category, collection: ['Chinese', 'Japanese', 'italian', 'french', 'belgian'] %>
+
+  <%= t.submit %>
+<% end %>
